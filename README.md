@@ -1,42 +1,26 @@
-# Chenyang Wang — Academic Website
+# Chenyang Wang — Academic Homepage
 
-A lightweight, responsive academic homepage designed for GitHub Pages.
+A compact, responsive academic homepage for GitHub Pages.
 
-## Files
+## Contents
 
-- `index.html` — all page content
-- `styles.css` — site styling
-- `script.js` — mobile menu and small interactions
-- `.nojekyll` — tells GitHub Pages to serve the static files directly
+- Profile photo, research interests, and contact links
+- Research news and current projects
+- Experience and education
+- BDPIE publication with its official Springer DOI
 
-## Before publishing
+## Publication link
 
-Open `index.html` and replace the three placeholder buttons:
+**Bi-dimensional Plug-in Enhancement for Tabular Learning: Explicit Feature and Sample Interaction for House Price Prediction**
 
-- `CV`
-- `GitHub`
-- `Google Scholar`
+DOI: [10.1007/978-981-92-3551-3_16](https://doi.org/10.1007/978-981-92-3551-3_16)
 
-Search for `data-placeholder-link` to find them quickly.
+## Local preview
 
-If you want the CV hosted on the site, put your PDF in this folder as `cv.pdf` and change the CV link to:
+Serve the repository root with any static HTTP server and open `index.html`.
 
-```html
-<a class="button subtle" href="cv.pdf">CV</a>
-```
+## Deployment
 
-## Publish with GitHub Pages
+The site is deployed from the `main` branch with GitHub Pages:
 
-1. Create a public GitHub repository named `<your-github-username>.github.io`.
-2. Upload all files in this folder to the repository root.
-3. Commit and push.
-4. Open `https://<your-github-username>.github.io`.
-
-If you use a differently named repository, enable GitHub Pages in **Settings → Pages** and deploy from the `main` branch.
-
-## Suggested next edits
-
-- Add your real GitHub and Google Scholar links.
-- Add `cv.pdf`.
-- Add paper links once manuscripts are public.
-- Optionally replace the `CW` monogram with a headshot later.
+[https://tokiwcy.github.io/wang_cy.github.io/](https://tokiwcy.github.io/wang_cy.github.io/)
