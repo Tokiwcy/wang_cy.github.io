@@ -320,6 +320,8 @@ button:focus-visible {
   background: linear-gradient(135deg, #fff, #f8fbfb);
 }
 
+.publication + .publication { margin-top: 18px; }
+
 .publication-year {
   color: var(--accent);
   font-family: var(--serif);
