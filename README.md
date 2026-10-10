@@ -4,9 +4,10 @@ A compact, responsive academic homepage for GitHub Pages.
 
 ## Contents
 
-- Profile photo, research interests, and contact links
+- Profile photo and contact links
 - Research news and current projects
 - Experience and education
+- SilentEHR and LREF committed to EACL 2027
 - Clinical-note utility paper accepted to IEEE BIBM 2026 (CCF-B)
 - BDPIE oral paper at ICIC 2026 with its official Springer DOI
 

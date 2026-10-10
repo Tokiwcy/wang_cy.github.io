@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Chenyang Wang is a Data Science undergraduate at NUS working on information retrieval, representation learning, multimodal AI, and healthcare AI." />
+  <meta name="description" content="Academic homepage of Chenyang Wang, a Data Science and Analytics undergraduate at the National University of Singapore." />
   <meta name="theme-color" content="#ffffff" />
   <meta property="og:title" content="Chenyang Wang | Academic Homepage" />
-  <meta property="og:description" content="Research in retrieval, representation learning, multimodal AI, and healthcare AI." />
+  <meta property="og:description" content="Selected publications, projects, experience, and education." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="profile.png" />
   <title>Chenyang Wang | Academic Homepage</title>
@@ -55,7 +55,7 @@
       <img class="profile-photo" src="profile.png" alt="Portrait of Chenyang Wang" width="253" height="328" />
       <div class="profile-copy">
         <h1>Chenyang Wang</h1>
-        <p class="profile-role">Data Science undergraduate<br />Researcher in retrieval &amp; AI</p>
+        <p class="profile-role">Data Science &amp; Analytics undergraduate<br />National University of Singapore</p>
       </div>
 
       <ul class="profile-links" aria-label="Contact and profiles">
@@ -80,24 +80,15 @@
     <article class="content">
       <section id="about" class="content-section intro-section">
         <p class="kicker">Hello, I’m Chenyang.</p>
-        <h2>Building learning systems that find and use the right evidence.</h2>
+        <h2>Academic profile and selected work.</h2>
         <p class="lead">
           I am a Data Science &amp; Analytics undergraduate at the
-          <strong>National University of Singapore</strong> and a research intern at
+          <strong>National University of Singapore</strong> and a research assistant intern at
           <strong>A*STAR Institute for Infocomm Research (I²R)</strong>.
         </p>
         <p>
-          My work studies how machine learning systems can retrieve useful evidence, repair weak representations,
-          and make more reliable predictions. I am particularly interested in information retrieval,
-          language and multimodal models, and healthcare AI.
+          This page highlights selected publications, research projects, experience, and education.
         </p>
-
-        <div class="interest-grid" aria-label="Research interests">
-          <span>Information Retrieval</span>
-          <span>Representation Learning</span>
-          <span>LLM / VLM Reasoning</span>
-          <span>Healthcare AI</span>
-        </div>
       </section>
 
       <section id="news" class="content-section">
@@ -106,6 +97,12 @@
           <h2>News</h2>
         </div>
         <div class="news-list">
+          <div class="news-item">
+            <time datetime="2026-10">Oct 2026</time>
+            <p>
+              <a href="#silentehr">SilentEHR</a> and <a href="#lref-paper">LREF</a> were committed to EACL 2027.
+            </p>
+          </div>
           <div class="news-item">
             <time datetime="2026-09">Sep 2026</time>
             <p>
@@ -135,10 +132,39 @@
           <h2>Publications</h2>
         </div>
 
+        <article class="publication" id="silentehr">
+          <div class="publication-year">2027</div>
+          <div>
+            <p class="publication-venue">EACL 2027 · ARR Commitment</p>
+            <h3>SilentEHR: Auditing Closed-World Extrapolation in Frozen Patient Representations</h3>
+            <p class="authors"><strong>Chenyang Wang</strong></p>
+            <p class="publication-summary">
+              SilentEHR audits whether frozen clinical encoders mistake unmentioned evidence for negative evidence.
+              Across 11,466 matched examples spanning 16 clinical concepts and 80 patient backgrounds, strong encoders
+              mapped 91–99% of unmentioned cases to Refuted while retaining 96–99% accuracy on explicit evidence;
+              explicit Unknown supervision substantially reduced this closed-world extrapolation.
+            </p>
+          </div>
+        </article>
+
+        <article class="publication" id="lref-paper">
+          <div class="publication-year">2027</div>
+          <div>
+            <p class="publication-venue">EACL 2027 · ARR Commitment · Findings</p>
+            <h3>Learning to Rewrite from Embedding Failures: Failure-Conditioned Representation Repair for Frozen Encoders</h3>
+            <p class="authors"><strong>Chenyang Wang</strong>, Yuxin Liu, and Xinran Liu</p>
+            <p class="publication-summary">
+              LREF uses systematic embedding failures to generate task-relevant semantic views and repair frozen
+              representations without fine-tuning the encoder. The method delivers an approximately three-point
+              absolute accuracy gain and transfers directly to clinical text classification and low-resource medical NLP.
+            </p>
+          </div>
+        </article>
+
         <article class="publication" id="clinotes">
           <div class="publication-year">2026</div>
           <div>
-            <p class="publication-venue">IEEE BIBM 2026 · Accepted · CCF-B</p>
+            <p class="publication-venue">IEEE BIBM 2026 · Oral Presentation · CCF-B</p>
             <h3>When Do Clinical Text Embeddings Help? A Controlled Utility Analysis for Multimodal ICU Prediction</h3>
             <p class="authors"><strong>Chenyang Wang</strong> et al.</p>
             <p class="publication-summary">
@@ -178,39 +204,57 @@
           <article class="project">
             <div class="project-meta">
               <span>Clinical IR</span>
-              <span>Ongoing</span>
+              <span>05/2026 — Present</span>
             </div>
             <h3>TRACE</h3>
             <p class="project-deck">Task-conditioned guideline retrieval from patient profiles.</p>
             <p>
-              TRACE studies how patient context and downstream clinical tasks should shape retrieval from external medical
-              guidelines, with task-specific evidence needs and both model-based and human relevance judgments.
+              TRACE segments discharge summaries into section-specific queries for three transition-of-care needs across
+              MIMIC-III and MIMIC-IV. Against 323 cardiovascular and metabolic guidelines, it reaches nDCG@10 ≈ 0.52
+              and outperforms whole-profile, compressed-query, multi-paraphrase, and task-agnostic baselines; judgments
+              were validated through LLM evaluation and blinded human annotation.
             </p>
           </article>
 
           <article class="project">
             <div class="project-meta">
-              <span>Representation Learning</span>
-              <span>Manuscript</span>
+              <span>Clinical NLP</span>
+              <span>05/2026 — 08/2026</span>
             </div>
-            <h3>LREF</h3>
-            <p class="project-deck">Learning to rewrite from embedding failures.</p>
+            <h3>SilentEHR</h3>
+            <p class="project-deck">Auditing closed-world extrapolation in frozen patient representations.</p>
             <p>
-              LREF learns from systematic mistakes made by frozen encoders and rewrites inputs so that decision-relevant
-              distinctions become more visible to a fixed embedding model and downstream classifier.
+              A matched 11,466-example benchmark across 16 clinical concepts and 80 patient backgrounds reveals that
+              multiple frozen encoders map 91–99% of unmentioned cases to Refuted despite 96–99% accuracy on explicit
+              evidence. Explicit Unknown supervision sharply reduces this failure with minimal known-case accuracy loss.
             </p>
           </article>
 
           <article class="project">
             <div class="project-meta">
               <span>Healthcare AI</span>
-              <span>Manuscript</span>
+              <span>04/2026 — 10/2026</span>
             </div>
             <h3>NECA</h3>
             <p class="project-deck">Neighbor-event curve augmentation for ICU deterioration prediction.</p>
             <p>
-              NECA augments early ICU measurements with trajectories from clinically similar patients to test whether
-              retrieved longitudinal evidence improves early deterioration prediction.
+              NECA augments the first six hours of ICU measurements with trajectories from similar patients for
+              6/12/24/48-hour prediction across five deterioration tasks. It yields about 12% relative AUROC improvement
+              for neurological deterioration and stable 3–7% gains on the remaining tasks across tabular and sequence models.
+            </p>
+          </article>
+
+          <article class="project">
+            <div class="project-meta">
+              <span>Representation Learning</span>
+              <span>06/2026 — 08/2026</span>
+            </div>
+            <h3>LREF</h3>
+            <p class="project-deck">Learning to rewrite from embedding failures.</p>
+            <p>
+              LREF generates task-relevant semantic views from systematic frozen-encoder failures and concatenates them
+              with the original representations without encoder fine-tuning. It improves accuracy by approximately three
+              percentage points and transfers to clinical text classification and low-resource medical NLP.
             </p>
           </article>
         </div>

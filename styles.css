@@ -246,22 +246,6 @@ button:focus-visible {
 .content strong { color: #273034; }
 .lead { font-size: 1.04rem; }
 
-.interest-grid {
-  margin-top: 27px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
-}
-
-.interest-grid span {
-  padding: 9px 12px;
-  border-left: 2px solid var(--accent);
-  background: var(--surface);
-  color: #3d484d;
-  font-size: 0.83rem;
-  font-weight: 600;
-}
-
 .section-title {
   display: flex;
   align-items: baseline;
@@ -609,8 +593,6 @@ button:focus-visible {
   .profile-note { grid-column: 1 / -1; }
   .content-section { padding-bottom: 52px; }
   .content-section + .content-section { padding-top: 50px; }
-  .interest-grid { grid-template-columns: 1fr; }
-
   .news-item {
     grid-template-columns: 70px minmax(0, 1fr);
     gap: 12px;
