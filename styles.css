@@ -197,23 +197,6 @@ button:focus-visible {
   text-align: center;
 }
 
-.profile-note {
-  margin: 20px 0 0;
-  color: var(--muted);
-  font-size: 0.76rem;
-  line-height: 1.5;
-}
-
-.profile-note span {
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  margin-right: 7px;
-  border-radius: 50%;
-  background: #53a66b;
-  box-shadow: 0 0 0 4px #edf7f0;
-}
-
 .content { min-width: 0; }
 
 .content-section {
@@ -560,11 +543,6 @@ button:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .profile-note {
-    grid-column: 2;
-    margin-top: 14px;
-  }
-
   .intro-section h2 { font-size: clamp(2rem, 9vw, 2.7rem); }
 }
 
@@ -590,7 +568,6 @@ button:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .profile-note { grid-column: 1 / -1; }
   .content-section { padding-bottom: 52px; }
   .content-section + .content-section { padding-top: 50px; }
   .news-item {
